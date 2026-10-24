@@ -195,7 +195,7 @@ function productCard(p){
           <div class="footer-grid">
             <div class="footer-brand">
               <a href="index.html" class="logo"><span class="logo-mark">✦</span>Luxe Gifts<span style="color:var(--gold);font-size:14px;font-family:'Inter'">LK</span></a>
-              <p>Sri Lanka's premium destination for handcrafted flower bouquets, celebration cakes, and curated gift hampers. Delivered island-wide with love.</p>
+              <p>Sri Lanka's premium destination for handcrafted flower bouquets, celebration cakes, and curated gift hampers. Delivered island wide with love.</p>
               <div class="footer-contact"><strong>Address:</strong> 42 Galle Road, Colombo 03, Sri Lanka</div>
               <div class="footer-contact"><strong>Phone:</strong> +94 77 123 4567</div>
               <div class="footer-contact"><strong>Email:</strong> hello@luxegifts.lk</div>
