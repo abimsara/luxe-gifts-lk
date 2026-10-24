@@ -147,7 +147,7 @@ function productCard(p){
   const headerPlaceholder = document.getElementById('site-header');
   if(headerPlaceholder){
     headerPlaceholder.outerHTML = `
-      <div class="topbar">🌸 Free delivery on orders over <span>Rs.15,000</span> · Same-day delivery in Colombo</div>
+      <div class="topbar">🌸 Free delivery on orders over <span>Rs.15,000</span> · Same day delivery in Colombo</div>
       <header>
         <div class="container">
           <div class="nav">
@@ -269,7 +269,7 @@ function renderHome(){
           <div>
             <div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:14px">Sri Lanka's Premium Gifting Destination</div>
             <h1>Celebrate every <em>moment</em> with something beautiful.</h1>
-            <p>Handcrafted flower bouquets, artisan celebration cakes, and curated gift hampers — delivered island-wide with same-day service in Colombo.</p>
+            <p>Handcrafted flower bouquets, artisan celebration cakes, and curated gift hampers delivered island wide with same day service in Colombo.</p>
             <div class="hero-cta">
               <a href="shop.html" class="btn btn-primary">Shop Now →</a>
               <a href="cakes.html" class="btn btn-outline">Order a Cake</a>
@@ -277,7 +277,7 @@ function renderHome(){
           </div>
           <div class="hero-visual">
             <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=900&q=80" alt="Luxury rose bouquet" onerror="this.onerror=null;this.src='https://placehold.co/800x1000/F5F0E8/8B6F47?text=Luxe+Gifts+LK'">
-            <div class="hero-badge"><span class="dot"></span>Same-day delivery in Colombo</div>
+            <div class="hero-badge"><span class="dot"></span>Same day delivery in Colombo</div>
           </div>
         </div>
       </div>
@@ -288,7 +288,7 @@ function renderHome(){
         <div class="section-head">
           <span class="eyebrow">Shop by Category</span>
           <h2>Thoughtfully curated for every occasion</h2>
-          <p>Explore our collections — each piece crafted with care and delivered with love.</p>
+          <p>Explore our collections each piece crafted with care and delivered with love.</p>
         </div>
         <div class="cat-grid">
           <a href="flowers.html" class="cat-card">
@@ -312,7 +312,7 @@ function renderHome(){
         <div class="section-head">
           <span class="eyebrow">Best Sellers</span>
           <h2>Loved by our customers</h2>
-          <p>Our most-gifted picks — auto-sliding on mobile for easy browsing.</p>
+          <p>Our most-gifted picks auto-sliding on mobile for easy browsing.</p>
         </div>
         <div class="carousel-wrap">
           <div class="carousel" id="bestCarousel">${bestSellers.map(p => productCard(p)).join('')}</div>
@@ -342,7 +342,7 @@ function renderHome(){
     <section class="trust">
       <div class="container">
         <div class="trust-grid">
-          <div class="trust-item"><div class="trust-icon">🚚</div><h4>Island-wide Delivery</h4><p>All 25 districts covered</p></div>
+          <div class="trust-item"><div class="trust-icon">🚚</div><h4>Island wide Delivery</h4><p>All 25 districts covered</p></div>
           <div class="trust-item"><div class="trust-icon">⚡</div><h4>Same-day Colombo</h4><p>Order before 2 PM</p></div>
           <div class="trust-item"><div class="trust-icon">💎</div><h4>Premium Quality</h4><p>Handcrafted daily</p></div>
           <div class="trust-item"><div class="trust-icon">💳</div><h4>Secure Payments</h4><p>Card or cash on delivery</p></div>
