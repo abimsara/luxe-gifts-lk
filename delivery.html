@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delivery Information — Luxe Gifts LK</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="delivery">
+<div id="site-header"></div>
+<main>
+  <div class="page static-page">
+    <div class="container">
+      <div class="static-hero">
+        <h1>Delivery Information</h1>
+        <p>Island-wide delivery with transparent, city-based charges.</p>
+      </div>
+      <div class="content-block">
+        <h2>Delivery Charges by Zone</h2>
+        <p>Delivery fee is calculated at checkout based on your city. Orders over <span id="freeThreshold">Rs.15,000</span> qualify for free delivery.</p>
+        <table class="delivery-table">
+          <thead><tr><th>Zone</th><th>Coverage</th><th>Fee</th></tr></thead>
+          <tbody id="deliveryZonesBody"></tbody>
+        </table>
+      </div>
+      <div class="content-block">
+        <h2>How It Works</h2>
+        <p><strong>1. Select your city</strong> at checkout — the delivery fee is automatically calculated and added to your order total.</p>
+        <p><strong>2. Same-day delivery</strong> is available in Colombo for orders placed before 2 PM.</p>
+        <p><strong>3. Confirmation call</strong> — we'll contact you to confirm the delivery address and time window.</p>
+        <p><strong>4. Free delivery</strong> on all orders above the free-delivery threshold.</p>
+      </div>
+    </div>
+  </div>
+</main>
+<div id="site-footer"></div>
+<div class="toast" id="toast"></div>
+<script src="js/app.js"></script>
+</body>
+</html>
