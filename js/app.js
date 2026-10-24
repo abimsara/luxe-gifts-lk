@@ -2,17 +2,6 @@
    app.js — Single combined JavaScript file for Luxe Gifts LK
    Loaded on every page. Detects the current page by filename
    and runs the correct init function.
-
-   Sections:
-     1. Data (products, delivery zones, flavors)
-     2. Cart state
-     3. Helpers (money, imgTag, showToast, productCard)
-     4. Header & Footer injection
-     5. Page element refs
-     6. Page renderers (home, shop, product, cart, checkout, delivery)
-     7. Product interactions (weight/flavor/qty)
-     8. Carousel
-     9. Router / init
    ============================================================ */
 
 /* ------------------------------------------------------------
@@ -373,7 +362,7 @@ function renderShopPage(){
   const list = catParam ? products.filter(p => p.cat === catParam) : products;
   const title = catParam ? catLabels[catParam] : 'Shop All Products';
   const sub = catParam === 'flowers' ? 'Fresh, hand-tied bouquets crafted by our florists.'
-    : catParam === 'cakes' ? 'Artisan-baked celebration cakes — priced per kg. Place orders at least 1 week in advance.'
+    : catParam === 'cakes' ? 'Artisan-baked celebration cakes — priced per kg. Place your cake order at least 1 week (7 days) before the date you need it.'
     : catParam === 'gifts' ? 'Curated hampers and gift sets for every occasion.'
     : 'Browse our full collection of flowers, cakes, and gifts.';
 
@@ -443,7 +432,7 @@ function renderProduct(){
               </div>
             </div>
             <div class="delivery-note" style="border-left-color:#c33;background:#FDF2F2;margin-top:0;margin-bottom:24px">
-              <strong>⏰ Advance Order:</strong> Please place cake orders at least <strong>1 week (7 days) in advance</strong>.
+              <strong>⏰ Cake Order Notice:</strong> Please place your cake order at least <strong>1 week (7 days) before the date you need it</strong>.
             </div>` : ''}
 
           <div class="pd-option">
@@ -509,7 +498,7 @@ function renderCart(){
   main.innerHTML = `<div class="page cart-page">
     <div class="container">
       <h1 style="font-size:32px;margin-bottom:32px">Shopping Cart</h1>
-      ${cart.some(i => i.id && i.id.startsWith('c')) ? `<div class="delivery-note" style="border-left-color:#c33;background:#FDF2F2;margin-bottom:24px"><strong>⏰ Cake Order Note:</strong> Please place cake orders at least <strong>1 week (7 days) in advance</strong> for guaranteed availability.</div>` : ''}
+      ${cart.some(i => i.id && i.id.startsWith('c')) ? `<div class="delivery-note" style="border-left-color:#c33;background:#FDF2F2;margin-bottom:24px"><strong>⏰ Cake Order Notice:</strong> Please place your cake order at least <strong>1 week (7 days) before the date you need it</strong> for guaranteed availability.</div>` : ''}
       <div class="cart-layout">
         <div class="cart-items">
           ${cart.map((i,idx) => `
@@ -554,7 +543,7 @@ function renderCheckout(){
   main.innerHTML = `<div class="page checkout-page">
     <div class="container">
       <h1 style="font-size:32px;margin-bottom:32px">Checkout</h1>
-      ${cart.some(i => i.id && i.id.startsWith('c')) ? `<div class="delivery-note" style="border-left-color:#c33;background:#FDF2F2;margin-bottom:24px"><strong>⏰ Cake Order Note:</strong> Please place cake orders at least <strong>1 week (7 days) in advance</strong> for guaranteed availability.</div>` : ''}
+      ${cart.some(i => i.id && i.id.startsWith('c')) ? `<div class="delivery-note" style="border-left-color:#c33;background:#FDF2F2;margin-bottom:24px"><strong>⏰ Cake Order Notice:</strong> Please place your cake order at least <strong>1 week (7 days) before the date you need it</strong> for guaranteed availability.</div>` : ''}
       <div class="checkout-layout">
         <div class="checkout-form">
           <h3>Delivery Details</h3>
@@ -636,7 +625,7 @@ function placeOrder(){
   </div>`;
 }
 
-/* ---- Delivery page (populate table + threshold) ---- */
+/* ---- Delivery page ---- */
 function initDeliveryPage(){
   const thresh = document.getElementById('freeThreshold');
   if(thresh) thresh.textContent = money(FREE_DELIVERY_THRESHOLD);
@@ -687,8 +676,6 @@ window.addEventListener('resize', () => {
 
 /* ------------------------------------------------------------
    8. ROUTER / INIT
-   Determines the current page from the filename and
-   runs the appropriate init function.
    ------------------------------------------------------------ */
 function getPageKey(){
   const path = location.pathname;
