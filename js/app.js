@@ -416,7 +416,7 @@ function renderProduct(){
           <div class="pd-cat">${catLabels[p.cat]}</div>
           <h1>${p.name}</h1>
           <div class="pd-price">${money(p.price)}</div>
-          <p class="pd-desc">${p.cat === 'cakes' ? 'Handcrafted with premium ingredients, beautifully decorated, and baked fresh on the day of delivery.' : p.cat === 'flowers' ? 'Freshly hand-tied by our florists using premium seasonal blooms, wrapped in luxury paper.' : 'Curated gift set with premium items, elegantly packaged — perfect for any occasion.'}</p>
+          <p class="pd-desc">${p.cat === 'cakes' ? 'Handcrafted with premium ingredients, beautifully decorated, and baked fresh on the day of delivery.' : p.cat === 'flowers' ? 'Freshly hand-tied by our florists using premium seasonal blooms, wrapped in luxury paper.' : 'Curated gift set with premium items, elegantly packaged perfect for any occasion.'}</p>
 
           ${weights ? `
             <div class="pd-option">
