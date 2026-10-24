@@ -36,7 +36,7 @@ const products = [
   {id:'g4', cat:'gifts', name:'Togetherness Couple Gift Hamper', price:7200, weight:null, img:IMG('1544816155-12df9643f363'), fallback:'Couple+Hamper'},
   {id:'g5', cat:'gifts', name:'Peachy Blooms Celebration Set', price:10900, weight:null, img:IMG('1607083206968-13611e3d76db'), fallback:'Celebration+Set'},
   {id:'g6', cat:'gifts', name:'Fresh Fruit & Chocolate Basket', price:23100, weight:null, img:IMG('1513201099705-a9746e1e201f'), fallback:'Fruit+Basket'},
-  {id:'g7', cat:'gifts', name:'Pink Balloon Combo Pack', price:26500, weight:null, img:IMG('1529336440980-9b3c57a06455'), fallback:'Balloon+Combo'},
+    {id:'g7', cat:'gifts', name:'Pink Balloon Combo Pack', price:26500, weight:null, img:'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=600&q=80', fallback:'Balloon+Combo'},
   {id:'g8', cat:'gifts', name:'The Joyful Munch Gift Hamper', price:17850, weight:null, img:IMG('1596462502278-27bfdc403348'), fallback:'Munch+Hamper', tag:'Best Seller'},
   {id:'g9', cat:'gifts', name:'Scented Candle & Bath Gift Set', price:8500, weight:null, img:IMG('1602173574767-37ac01994b2a'), fallback:'Candle+Gift+Set'},
   {id:'g10',cat:'gifts', name:'Personalised Mug & Chocolate Box', price:4900, weight:null, img:IMG('1544441893-675973e31985'), fallback:'Mug+Chocolate'}
